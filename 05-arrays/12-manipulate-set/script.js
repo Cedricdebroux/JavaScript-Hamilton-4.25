@@ -22,6 +22,11 @@
         "grape",
         "cherry",
     ]);
-
+    document.getElementById("run").addEventListener("click", function(){
+        fruits.delete("apple");
+        fruits.delete("cherry")
+        fruits.add("banana").add("Kiwi");
+        console.log(fruits)
+    });
     // your code here
 })();

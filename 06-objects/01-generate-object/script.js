@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener ("click", function() {
+    // const donnee = { lastname: 'Debroux', firstname: 'Cédric', age: 39, city: "Clavier", country: "Belgique" };
+    let me = new Object();
+    me.name = "Debroux";
+    me.surname = "Cédric";
+    me.age = 39;
+    me.city = "Clavier";
+    me.country = "Belgium";
+
+    console.table(me);
+
+});
 })();

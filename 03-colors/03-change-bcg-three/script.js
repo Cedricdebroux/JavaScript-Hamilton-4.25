@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let letters = '0123456789ABCDEF';
+    let bgcolor = '#';
+    for (let i = 0; i < 6; i++) {
+      bgcolor += letters[Math.floor(Math.random() * 16)];
+    }
+    /* alert(bgcolor);  only for check*/
+
+    document.getElementById("run").addEventListener("click", function () {
+        document.body.style.background = bgcolor;
+    })
 
 })();

@@ -16,5 +16,11 @@
             this.age = age;
         }
     }
+    document.getElementById("run").addEventListener("click", function () {
+           const skitty = new Cat("skitty", 9);
+           const pixel = new Cat("pixel", 6);
+           console.log(skitty, pixel);
+        
+    });
     // your code here
 })();

@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
+    let hello="hello world";
+    alert(hello);
 
 })();

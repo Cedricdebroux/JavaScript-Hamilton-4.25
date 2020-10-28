@@ -25,7 +25,10 @@
         "grap",
         "cherry",
     ];
-
+    for(let valeur of fruits)
+    document.getElementById("run").addEventListener("click", function(){
+        console.log (valeur);
+    });
     // your code here
 
 })();

@@ -14,8 +14,9 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
+        let a = document.getElementById("numbers").value.split(",");
+        a.sort((a,b) => a - b);
+        alert(a);
 
     });
 

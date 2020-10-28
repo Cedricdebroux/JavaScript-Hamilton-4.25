@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
-
+    var age, gender, city, question;
+    age = prompt("quel âges avez-vous ");
+    gender = prompt("quel est votre genre");
+    city = prompt("dans quelle ville vivez-vous"); 
+    question = confirm("Vous êtes bien une personne de sexe " + gender + "de " + age + "ans et vivant à " +city );
+    if (question == false){
+        age = prompt("quel âges avez-vous ");
+        gender = prompt("quel est votre genre");
+        city = prompt("dans quelle ville vivez-vous"); 
+        question = confirm("Vous êtes bien une personne de sexe " + gender + "de " + age + "ans et vivant à " +city );
+    }
 })();
