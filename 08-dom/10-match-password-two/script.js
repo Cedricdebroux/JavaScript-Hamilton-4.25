@@ -10,7 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click" , function(){
+        let password = document.getElementById("pass-one").value;
+        let confirmPassword = document.getElementById("pass-two").value;
+        if (password === confirmPassword) {
+        console.log("Passwords match.");
+        }
+        else{
+            document.getElementById("pass-two").innerHTML = "ERROR";
+        }
 
+    });
     // your code here
 
 })();

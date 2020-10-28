@@ -15,12 +15,13 @@
             this.firstname = firstname;
             this.lastname = lastname;
         }
+        sayHello(){
+            console.log("Hello " + this.firstname + " " + this.lastname);
+        }
     }
     document.getElementById("run").addEventListener("click", function () {
         const cedric = new person("Cédric", "Debroux");
-        function sayHello(cedric){
-            alert("hello" + cedric);
-        }
+            cedric.sayHello();
         
     });
     // your code here
