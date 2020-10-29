@@ -9,16 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    document.getElementById("pass-one").value;
-if (
-  str.match(/[a-z]/g) &&
-  str.match(/[0-9]/g) &&
-  str.match(/[a-z\d{2}]/g) &&
-  str.length >= 8
-) {
-  document.getElementById("validity").innerHTML = "Ok";
-} else {
-  document.getElementById("validity").innerHTML = "Not ok";
-}
-})();
+    (function() {
+        let password = document.getElementById('pass-one');
+        password.addEventListener('keyup', () => {
+            const paragraph = password.value;
+            const regex = /[0-9]/g;
+            const number = paragraph.match(regex);
+            if (number.length >=2 && paragraph.length >= 8){
+                document.getElementById("validity").innerHTML = "ok";
+            }
+            else { 
+                document.getElementById("validity").innerHTML = "Not ok";
+            };
+        });
+    
+    })();
+    
+    // your code here
+
