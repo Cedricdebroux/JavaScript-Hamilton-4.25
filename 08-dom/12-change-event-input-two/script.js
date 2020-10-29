@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    document.getElementById("pass-one").value;
+if (
+  str.match(/[a-z]/g) &&
+  str.match(/[0-9]/g) &&
+  str.match(/[a-z\d{2}]/g) &&
+  str.length >= 8
+) {
+  document.getElementById("validity").innerHTML = "Ok";
+} else {
+  document.getElementById("validity").innerHTML = "Not ok";
+}
 })();
