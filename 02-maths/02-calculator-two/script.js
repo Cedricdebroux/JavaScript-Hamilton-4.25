@@ -13,7 +13,7 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
-        var result
+        let result
         switch (operation) {
         case "addition":
         result = parseInt(document.getElementById("op-one").value) + parseInt(document.getElementById("op-two").value);
