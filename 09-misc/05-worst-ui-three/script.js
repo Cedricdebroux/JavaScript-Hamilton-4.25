@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    let result1 = (document.getElementById("part-one").value);
+    let result2 = parseInt(document.getElementById("part-two").innerHTML);
+    let result3 = parseInt(document.getElementById("part-three").innerHTML);
+    let result4 = parseInt(document.getElementById("part-four").innerHTML);
+    let output = document.getElementById("target");
+    let max = result1.getAttribute("data-max");
+    let min = result1.getAttribute("data-min");
+    innerHTML.output = Math.floor(Math.random() * (max - min + 1 )) + min;
+   // your code here
 
 })();
