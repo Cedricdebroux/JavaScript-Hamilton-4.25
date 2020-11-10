@@ -13,18 +13,18 @@
         let body = document.getElementById("target");
             let tbl = document.createElement("table");
             let tblBody = document.createElement("tbody");
+            tbl.appendChild(tblBody); // dans la balise tableau(tbl) ont ajoute la balise tablbody
+            body.appendChild(tbl);//dans la balise body ont ajoute la balise tableau(tbl) 
             for (let j = 0; j < 10; j++) {
               let row = document.createElement("tr");
             for (let i = 0; i < 10; i++) {
               let cell = document.createElement("td");
               cell.innerText =  (i+1)+" x "+(j+1)+" = "+(i+1)*(j+1);
-              row.appendChild(cell);
+              row.appendChild(cell); //appendChild ajouter un élément enfant (ont ajoute des cellule dans les ligne)(dans la boucle car elle doivent se répéter)
               }
               tblBody.appendChild(row);
+              //ajouter une ligne dans les cellule
             }
-            tbl.appendChild(tblBody);
-            body.appendChild(tbl);
-    
         // your code here
 })();
 

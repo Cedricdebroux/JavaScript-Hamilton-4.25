@@ -36,7 +36,7 @@
         clearInterval(time);
         result1 = "+32" + result1.value;
         output.innerHTML = result1 + min2 + min2 + min2;
-    })
+    });
     
     //deuxième
     let time2 = setInterval(function(){
