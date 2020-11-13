@@ -11,4 +11,31 @@
 
 (() => {
     // your code here
-})();
+  
+    document.querySelector("#run").addEventListener("click", () => {
+      let input = Number(document.getElementById("hero-id").value);
+  
+      fetch("http://localhost:3000/heroes")
+        .then(function (dataHeroes) {
+          return dataHeroes.json();
+        })
+  
+        .then(function (dataHeroes) {
+          dataHeroes.forEach(function (hero) {
+            let template = document.getElementById("tpl-hero").content;
+            let location = document.getElementById("target");
+            let templateClone = template.cloneNode(true);
+  
+            if (input === hero.id) {
+              templateClone.querySelector(".name").innerHTML = hero.name;
+              templateClone.querySelector(".alter-ego").innerHTML = hero.alterEgo;
+              templateClone.querySelector(
+                ".powers"
+              ).innerHTML = hero.abilities.join(", ");
+  
+              location.appendChild(templateClone);
+            }
+          });
+        });
+    });
+  })();
