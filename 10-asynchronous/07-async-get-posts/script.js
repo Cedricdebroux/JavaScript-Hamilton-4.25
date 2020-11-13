@@ -8,7 +8,14 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (() => {
-    // your code here
-})();
+    document.querySelector("#run").addEventListener("click", async () => {
+      const result = await window.lib.getPosts()
+      console.log(result);
+      try {
+            const result = await lib.getPosts();
+      }catch(error){
+            console.log(error)
+      }
+    });
+  })();
